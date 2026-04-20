@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="EZ DuctPatch® is a safe, affordable, and effective HVAC access patch for air duct cleaning and sealing. Replace metal patches and foil tape with a faster, easier and safer solution.">
+    <link rel="canonical" href="https://www.ezductpatch.com/">
+    <title>EZ DuctPatch® – HVAC Access Patch for Air Duct Cleaning & Sealing</title>
+    <meta property="og:title" content="EZ DuctPatch® – HVAC Access Patch for Air Duct Cleaning & Sealing">
+    <meta property="og:description" content="A safe, affordable, and effective alternative to metal patches and foil tape for air duct cleaning and sealing.">
+    <meta property="og:type" content="product">
+    <meta property="og:image" content="https://www.ezductpatch.com/media/logo.png">
+    <meta property="og:image:alt" content="EZ DuctPatch HVAC access patch">
+    <meta property="og:url" content="https://www.ezductpatch.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "EZ DuctPatch",
+        "description": "A safe, affordable, and effective HVAC access patch for air duct cleaning and sealing. Replace metal patches and foil tape with a faster, easier and safer solution.",
+        "brand": "EZ DuctPatch",
+        "image": "https://www.ezductpatch.com/media/logo.png",
+        "url": "https://www.ezductpatch.com/"
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f4f9ff;
+        color: #0a2a43;
+      }
+      
+      html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      
+      hr {
+        width: 66%;
+        font-weight: bold;
+        align: center;
+      }
+      
+      table {
+        padding: 0;
+        border: 0;
+      }
+      
+      a:visited {
+        color: blue;
+      }
+      
+      /* --- TOP NAVIGATION BAR --- */
+      .topnav {
+        width: 100%;
+        height: 103px;
+        background: #0a3d62;
+        color: white;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: 0.95rem;
+        position: relative;
+        top: 0;
+        z-index: 1000;
+        overflow: visible;
+      }
+      
+      .topnav-logo {
+        cursor: default;
+        position: absolute;
+      }
+      
+      .topnav-item {
+        cursor: pointer;
+        position: relative;
+        padding: 6px 0;
+        left: 100px;
+      }
+      
+      .topnav-item:hover {
+        opacity: 1.0;
+      }
+      
+      .topnav-info {
+        margin-left: auto;
+        text-align: right;
+        padding-right: 40px;
+        white-space: nowrap;
+      }
+      
+      .topnav-info p {
+        line-height: 5px;
+        color: white;
+      }
+      
+      .topnav-info a {
+        line-height: 5px;
+        color: white;
+      }
+      
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: 28px;
+        left: 0;
+        background: white;
+        opacity: 1.0;
+        color: #0a3d62;
+        min-width: 180px;
+        border-radius: 4px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        padding: 10px 0;
+      }
+      
+      .topnav-item:hover .dropdown {
+        display: block;
+      }
+      
+      .dropdown a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #0a3d62;
+        font-size: 0.9rem;
+      }
+      
+      .dropdown a:hover {
+        background: #e8f4ff;
+      }
+      
+      .left-pane {
+        width: 306px;
+        margin-right: 40px;
+      }
+      
+      .left-pane .img-box {
+        width: 311px;
+        height: 153px;
+        background: rgba(255,255,255,0.25);
+        border-radius: 10px;
+        margin-bottom: 18px;
+        backdrop-filter: blur(4px);
+        display: block;
+      }
+      
+      .hero {
+        background: linear-gradient(135deg, #0a3d62, #3c82c4);
+        color: white;
+        padding: 60px 40px;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      
+      .hero-text {
+        white-space: nowrap;
+        font-size: 1.6rem;
+        position: relative;
+        max-width: 400px;
+        z-index: 2;
+      }
+      
+      .hero-text h1 {
+        font-size: 3rem;
+        margin: 0 0 10px 0;
+        margin-top: -100px;
+        margin-left: -10px;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+      }
+      
+      .hero-text li {
+        font-size: 1.8rem;
+        margin-left: -10px;
+        opacity: 0.9;
+        position: relative;
+        z-index: 2;
+      }
+      
+      .hero-slideshow-box {
+        position: relative;
+        top: 230px;
+        left: 30px;
+        transform: translateY(-50%);
+        width: 1080px;
+        min-width: 1080px;
+        height: 480px;
+        min-height: 480px;
+        z-index: 1;
+        overflow: visible;
+      }
+      
+      .hero-slide {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        animation-duration: 12s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      
+      section {
+        position: relative;
+        width: 1024px;
+        height: 512px;
+        overflow: hidden;
+        margin: auto;
+      }
+      
+      .features-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .features-slider .features-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .features-slider .features-slide img {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+         object-fit: cover;
+      }
+       
+      .features-controls {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+      }
+      
+      .features-controls ul {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 12px;
+      }
+      
+      .features-controls li {
+        list-style: none;
+      }
+      
+      .features-controls li a {
+        display: block;
+        width: 1em;
+        height: 1em;
+        background: #0002f8;
+        border-radius: 50%;
+        margin: 0;
+        opacity: 0.8;
+      }
+      
+      .features-controls li a:hover {
+        background: #fff;
+        opacity: 1;
+      } 
+      
+      .features-controls li a:active a:focus {
+        background: #000;
+        color: #fff;
+        opacity: 1;
+      }
+      
+      .features-content {
+        padding: 50px;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+      
+      .menuitem {
+        white-space: nowrap;
+        font-size: 1.25rem;
+      }
+      
+      .step {
+        white-space: nowrap;
+        font-size: 1.5rem;
+      }
+      
+      /* --- AUTO-CYCLING COLLAGE #1 --- */
+      .hero-slide:nth-child(1) {
+        animation-name: fade1;
+      }
+      
+      /* --- AUTO-CYCLING COLLAGE #2 --- */
+      .hero-slide:nth-child(2) {
+        animation-name: fade2;
+      }
+      
+      @keyframes fade1 {
+        0%   { opacity: 1; }
+        40%  { opacity: 1; }
+        50%  { opacity: 0; }
+        90%  { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      @keyframes fade2 {
+        0%   { opacity: 0; }
+        40%  { opacity: 0; }
+        50%  { opacity: 1; }
+        90%  { opacity: 1; }
+        100% { opacity: 0; }
+      }
+      
+      /* --- SECTIONS --- */
+      .section {
+        padding: 60px 40px;
+        text-align: left;
+      }
+      
+      .section h2 {
+        font-size: 2rem;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        color: #0a3d62;
+      }
+      
+      .section p {
+        width: 100%;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #1b4f72;
+        text-align: justify;
+      }
+      
+      .features {
+        display: flex;
+        margin-top: 40px;
+        gap: 30px;
+      }
+      
+      .feature-box {
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        width: 512px;
+        height: 290px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+      
+      .feature-box h2 {
+        margin-top: 0;
+        color: #0a3d62;
+      }
+      
+      .feature-box h3 {
+        margin-top: 0;
+        color: #0a3d62;
+      }
+      
+      .feature-box p {
+        text-align: justify;
+      }
+      
+      .faq {
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin: auto;
+      }
+       
+      .faq h3 {
+        font-size: 18px;
+        color: #333;
+        text-align: left;
+        left: 30%;
+      }
+       
+      .faq p {
+        font-size: 16px;
+        text-align: justify;
+        left: 30%;
+      }
+      
+      .faq hr {
+        margin-left: 0;
+      }
+      
+      .media-player-std {
+        width: 1080px;
+        max-width: 1080px;
+        display: block;
+      }
+      
+      footer {
+        text-align: center;
+        font-weight: bold;
+        line-height: 2px;
+        padding: 10px;
+        font-size: 0.9rem;
+        color: #0a3d62;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TOP NAVIGATION BAR -->
+    <div class="topnav">
+      <div class="topnav-logo"><img src="media/logo.png"></div>
+      <div class="topnav-item"></div> <!-- empty alignment placeholder -->
+      <div class="topnav-item">
+        <h2 class="menuitem">About</h2>
+        <div class="dropdown">
+          <a href="#about">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+          <a href="media/abs_resin_datasheet.pdf" target="_blank">Datasheet (PDF)</a>
+          <a href="https://patentimages.storage.googleapis.com/1b/fa/84/2fc8bb0c5a7380/USD1003422.pdf"
+            target="_blank">Patent Specs (PDF)</a>
+        </div>
+      </div>
+
+      <!-- <div class="topnav-item">
+        <h2 class="menuitem">Where to buy</h2>
+        <div class="dropdown">
+          <a href="#">Distributors</a>
+          <a href="#">Online Retailers</a>
+          <a href="#">Bulk Orders</a>
+        </div>
+      </div> -->
+
+      <div class="topnav-item">
+        <h2 class="menuitem">Sales &amp; Support</h2>
+        <div class="dropdown">
+          <a href="#contact">Contact</a>
+          <a href="#contact">Ordering</a>
+        </div>
+      </div>
+
+      <div class="topnav-info">
+        <p align="right">Email:
+          <a style="text-decoration: none;"
+             href="mailto:info@ezductpatch.com"><b>info@ezductpatch.com</b></a></p>
+        <p align="right">US Patent No. 
+          <a style="text-decoration: none;"
+             href="https://patents.google.com/patent/USD1003422S1/en?oq=D1003422">
+             <b>USD1003422S1</b></a></p>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="left-pane">
+        <div align="center" class="img-box"><img src="media/made_in_usa.png"></img></div>
+        <div align="center" class="img-box"><img src="media/abs_resin.png"></img></div>
+        <div class="img-box">
+          <img src="media/ul_flame_rating.png"></img>
+          <img src="media/ul_elec_rating.png"></img>
+        </div>
+      </div>
+    
+      <div class="hero-text">
+        <h1>Easy installation!</h1>
+        <ol>
+          <li class="step">Cut an 8" circular opening</li>
+          <li class="step">Add sealant to patch</li>
+          <li class="step">Apply patch over opening</li>
+          <li class="step">Secure with metal screws</li>
+          <li class="step">That's it!</li>
+        </ol>
+      </div>
+    
+      <div class="hero-slideshow-box">
+        <div class="hero-slide" style="background-image: url('media/collage1.png');"></div>
+        <div class="hero-slide" style="background-image: url('media/collage2.png');"></div>
+      </div>
+    </div>
+    <br>
+    <table id="about" align="center">
+      <tr>
+        <td>
+          <div class="feature-box">
+            <h2>What is <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font>?</h2>
+            <p>The <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> is a circular <b title="Acrylonitrile Butadiene Styrene" style="border-bottom: 1px dotted #000; text-decoration: none;">ABS</b> resin patching product designed to reliably seal a previously cut service access point into an air duct system.</p>
+            <p>It is affordable, lightweight, non-hazardous, non-toxic and simple to install, making it a great alternative to the use of metal patches and foil tape.</p>
+            <p>For all technical data, download our <a href="media/abs_resin_datasheet.pdf" target="_blank">datasheet (PDF)</a>. Also, check out the <a href="#features">features slide</a> below!</p>
+            <p>For more information about <b title="Acrylonitrile Butadiene Styrene" style="border-bottom: 1px dotted #000; text-decoration: none;">ABS</b> resin in general, see this <a href="https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene" target="_blank">Wikipedia article</a>.</p>
+          </div>
+        </td>
+        <td>
+          <div class="feature-box">
+            <h2>How does <font color="blue">EZ DuctPatch<sup>®</sup></font> work?</h2>
+            <p>During recommended air duct cleaning, it is often necessary for a service access point to be cut so that air duct cleaning tools can reach portions of the duct work. The <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> provides a safe and efficient means for sealing that access point.</p>
+            <p>Once in place, no additional holes need to be made in that location, meaning that future cleaning is faster and more cost effective: the patch need only be temporarily removed to expose the access point.</p>
+            <p>Use of both a sealant and screws ensures that an air tight seal is maintained for the long term, ultimately saving money by maintaining strong airflow pressure <i>without any leaks</i>.</p>
+          </div>
+        </td>
+        <td>
+          <div class="feature-box">
+            <h2>Why should we use <font color="blue">EZ DuctPatch<sup>®</sup></font>?</h2>
+            <p>The <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> is designed to serve the same purpose as a traditional metal patch and foil tape application, but at a <i>lower cost</i>, <b>and</b> with <i>safer</i>, <i>faster</i> and <i>easier</i> labor</i>.</p>
+            <p><font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> is considerably lighter than metal patches, meaning that shipping costs will be lower -- particularly on large orders!</p>
+            <p>Furthermore, no sharp edges are present on an <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font>, meaning its application will be safer. It even comes with 7 pre-drilled holes intended for metal screws, which secure the patch in addition to sealant.</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <br><hr><br>
+    <section id="features">
+      <div class="features-controls">
+        <ul>
+          <li><a href="#features-slide1"></a></li>
+          <li><a href="#features-slide2"></a></li>
+          <li><a href="#features-slide3"></a></li>
+          <li><a href="#features-slide4"></a></li>
+          <li><a href="#features-slide5"></a></li>
+        </ul>
+      </div>
+      <div class="features-slider">
+        <div class="features-slide" id="features-slide0">
+          <img src="media/feature-slide0.png">
+        </div>
+        <div class="features-slide" id="features-slide1">
+          <img src="media/feature-slide1.png">
+        </div>
+        <div class="features-slide" id="features-slide2">
+          <img src="media/feature-slide2.png">
+        </div>
+        <div class="features-slide" id="features-slide3">
+          <img src="media/feature-slide3.png">
+        </div>
+        <div class="features-slide" id="features-slide4">
+          <img src="media/feature-slide4.png">
+        </div>
+        <div class="features-slide" id="features-slide5">
+          <img src="media/feature-slide5.png">
+        </div>
+      </div>
+    </section>
+    <br><hr>
+    <h1 align="center">Demonstration</h1>
+    <div align="center">
+      <video class="media-player-std" controls>
+        <source src="media/ezdp_demo.mp4" type="video/mp4">
+      </video>
+    </div>
+    <br><hr>
+    <div align="center">
+      <h1 id="faq">Frequently Asked Questions</h1>
+      <div class="faq">
+        <h3>What is the <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font>
+          made of?</h3>
+        <p>The <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> is constructed using an <b title="Acrylonitrile Butadiene Styrene" style="border-bottom: 1px dotted #000; text-decoration: none;">ABS</b> resin, a resilient thermoplastic polymer. <a href="https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene" target="_blank">Read more</a>.</p>
+        <hr>
+        <h3>What are the weight and dimensions of the
+          <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font>?</h3>
+        <p>The <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> has a diameter of <i>10 inches</i> (<i>25.4 centimeters</i>), a maximum thickness of approximately <i>0.35 inches</i> (<i>0.9 centimeters</i>) and a weight of approximately <i>0.276 pounds</i> (<i>4.43 ounces</i>).</p>
+        <hr>
+        <h3>Does the <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> come in different colors?</h3>
+        <p>Yes! <a href="#contact">Contact us</a> for a full list of available colors.</p>
+        <hr>
+        <h3>Is the <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> reusable?</h3>
+        <p>Yes! The <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> is <i>intended</i> to be reinstalled following subsequent duct cleaning.</p>
+        <p>Simply detach the <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> from the duct system by removing the metal screws. Once duct cleaning is complete, peel off the previous bead of sealant from the backside of the patch and apply new sealant in its place. Finally, re-secure the patch using the metal screws just like before.</p>
+        <hr>
+        <h3>When ordering, what quantities of the 
+          <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> are available?</h3>
+        <p>The <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> ships in denominations of 25. The minimum quantity available for ordering is 25, which totals approximately <i>7 pounds</i> (<i>112 ounces</i>).</p>
+        <hr>
+        <h3>What kind of sealant should I use when installing an
+          <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font>?</h3>
+        <p>We recommend a water-based Mastic<sup>®</sup> air duct sealant.</p>
+        <hr>
+        <h3>Why shouldn't I simply make my own metal patches using rolls of sheet metal?</h3>
+        <p>While fashioning your own metal patches might seem to be cost effective, you should consider the larger picture. Even under the best circumstances, sheet metal is <i>notorious</i> with regards to bodily injury.</p>
+        <p>Cutting and handling entire rolls of this material raises this risk <b><i>exponentially</i></b>. Should one of your team members cut themselves, this can lead to costly workman's compensation claims and loss of available jobsite personnel at the very least. If such an injury is serious enough, this could even lead to lawsuits.</p>
+        <p>In short, making your own metal patches is an unnecessary risk which can lead to <i>severe unforeseen consequences</i>. <u>Don't risk it!</u> Enjoy peace of mind by only using the <font color="blue"><b>EZ DuctPatch<sup>®</sup></b></font> at your next jobsite.</p>
+      </div>
+    </div>
+    <hr><br>
+    <div align="center">
+      <a 
+        href="mailto:info@ezductpatch.com"
+        style="text-decoration:none;"
+        title="Click here to contact us">
+        <img id="contact" src="media/contact.png">
+        <h2
+          align="center"
+          style="line-height:5px; color:black;">
+          Email: info@ezductpatch.com
+        </h2>
+      </a>
+    </div>
+    <hr>
+    <footer>© 2020-2026 Fred Doyle, All Rights Reserved &#8226; US Patent No. 
+      <a
+        href="https://patents.google.com/patent/USD1003422S1/en?oq=D1003422"
+        target="_blank"
+        style="text-decoration:none; color:#0a3d62;">
+        USD1003422S1
+      </a>
+    </footer>
+    <br><br>
+    </body>
+</html>
+
